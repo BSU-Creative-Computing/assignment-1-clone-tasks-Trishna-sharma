@@ -1,139 +1,127 @@
-// Define CSS styles for the whole div
+//Importing the files to the scss
 @import 'variables';
 @import 'mixins';
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
+  body { // to get the whole body design
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    text-align: center;
-
-   
-
-  .containerr{
-    @include media-query($break-l) {
-      max-width: 940px;
-    }
-  
-    @include media-query($break-l2) {
-      max-width: 1040px;
-    }
-
-    @include media-query($break-l3) {
-      min-width: 870px;
-    }
-
-    @include media-query($break-l4) {
-      min-width: 870px;
-    }
-  }
+    text-align: center;  
   }
    
-
-.d1{
-  width: 800px;
-  margin: 0 auto;
-  background-color: #89CFF0;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-  
-.d2{
-  width: 800px;
-  margin: 0 auto;
-  background-color: #89CFF0;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-  
-  .image {
+  .containerr {
     display: flex;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
     
+    
+  }
+
+  
+
+  .d1{
+    background-color: #66ccff;
+    height:399px;
+    max-width: 600px;
+    
+    
+  }
+
+  .d2{
+    background-color: #66ccff;
+    height:399px;
+    max-width: 600px;
+    
+  }
+
+
+  .my-image {
+   
+    justify-content: center;
   }
   
 
   .box1 {
-    width: 400px; /* Set the desired width for the container */
-    justify-content: center;/* Center the container horizontally */
+    width: 400px; 
+    justify-content: center;
     border: 1px solid #000;
     text-align: center;
 }
 
-/* Define CSS styles for the vertical divs */
+
 .r1 {
-    width: 800px; /* Each vertical div takes 50% of the container width */
-    height:50px; /* Set the desired height for the vertical divs */
+    width: 1600px; 
+    height:50px; 
     display: inline-block;
-    background-color: #e0e0e0;
+    background-color: $f-color;
     margin-top:-10px;
 }
 
 .r2 {
-    width: 800px; /* Each vertical div takes 50% of the container width */
-    height:50px; /* Set the desired height for the vertical divs */
+    width: 1600px; 
+    height:50px; 
     display: inline-block;
-    background-color: #e91818;
+    background-color: $s-color;
     margin-top:-10px;
 }
 
 .r3 {
-    width: 800px; /* Each vertical div takes 50% of the container width */
-    height:50px; /* Set the desired height for the vertical divs */
+    width: 1600px;
+    height:50px; 
     display: inline-block;
-    background-color: #2e1f1f;
+    background-color: $t-color;
     margin-top:-10px;
 }
 
 .r4 {
-    width: 800px; /* Each vertical div takes 50% of the container width */
-    height:50px; /* Set the desired height for the vertical divs */
+    width: 1600px;
+    height:50px; 
     display: inline-block;
-    background-color: #d6b6b6;
+    background-color: $fo-color;
     margin-top:-10px;
 }
+
+
 .circle {
-    width: 50px; /* Set the initial width of the smallest circle */
-    height: 50px; /* Set the initial height of the smallest circle */
-    background-color: #4e89ae;
-    border-radius:70px ; /* Makes the element a circle */
-    margin: 10px auto; /* Centers the circles horizontally */
+    width: 50px; 
+    height: 50px;
+    background-color: $f-color;
+    border-radius:70px ;
+    margin: 10px auto; 
+    
 }
 
-/* Increase the size of the circles */
+
 .circle:nth-child(2) {
-  width: 80px; /* Set the initial width of the smallest circle */
+  width: 80px;
     height: 80px;
     border-radius: 80px;
-    background-color: #43658b;
+    background-color:$s-color;
 }
 
 .circle:nth-child(3) {
-  width: 90px; /* Set the initial width of the smallest circle */
+  border-radius: 90px;
+  background-color: $t-color;
+  width: 90px; 
     height: 90px;
-    border-radius: 90px;
-    background-color: #ed6663;
+  
 }
 
 .circle:nth-child(4) {
-  width: 100px; /* Set the initial width of the smallest circle */
+  border-radius: 100px;
+  background-color: $fo-color;
+  width: 100px; 
     height: 100px;
-   border-radius: 100px;
-    background-color: #ffa372;
+  
 }
+
+
 
 footer {
     background-color: #8ccff7;
-    color: #fff; /* Text color for the footer content */
+    color: #fff;
     text-align: center;
-    height:50px; /* Padding for top and bottom */
+    height:50px; 
 
 }
 
@@ -148,7 +136,31 @@ footer {
   }
 }
 
+@media (max-width:1280) and (min-height:870) {
+
+  @include computer;
+  .my-image{
+    background-image: url(300.png);
+  }
+  
+} 
+
+@media (max-width:1024px)  and (min-height:870) {
+
+  @include tablet;
+  
+} 
+
+@media (max-width:1040px)  and (min-height:620) {
+
+  @include phone;
+  
+} 
+
+
+
+
 .my-container {
   @include center-content;
-  // other styles for your container
 }
+

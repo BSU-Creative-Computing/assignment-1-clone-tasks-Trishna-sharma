@@ -9,3 +9,322 @@
     justify-content: center;
     align-items: center;
   }
+
+
+
+  @mixin computer{
+    
+  .containerr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+
+  .container{
+    display:flex;
+    flex-direction: row;
+  }
+
+  .d1{
+    background-color: #66ccff;
+    height:399px;
+    max-width: 600px;
+    
+    
+  }
+
+  .d2{
+    background-color: #66ccff;
+    height:399px;
+    max-width: 600px;
+    
+  }
+
+
+  .my-image {
+   
+    justify-content: center;
+  }
+  
+
+  .box1 {
+    width: 400px; 
+    justify-content: center;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+
+.r1 {
+    width: 1600px; 
+    height:50px; 
+    display: inline-block;
+    background-color: $f-color;
+    margin-top:-10px;
+}
+
+.r2 {
+    width: 1600px; 
+    height:50px; 
+    display: inline-block;
+    background-color: $s-color;
+    margin-top:-10px;
+}
+
+.r3 {
+    width: 1600px;
+    height:50px; 
+    display: inline-block;
+    background-color: $t-color;
+    margin-top:-10px;
+}
+
+.r4 {
+    width: 1600px;
+    height:50px; 
+    display: inline-block;
+    background-color: $fo-color;
+    margin-top:-10px;
+}
+  }
+
+
+  
+
+  @mixin tablet{
+    .my-image{
+      background-image: url(300.png);
+    }
+
+
+    .containerr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      
+    }
+  
+    
+  
+    .d1{
+      background-color: #66ccff;
+      height:399px;
+      max-width: 500px;
+      
+      
+    }
+  
+    .d2{
+      background-color: #66ccff;
+      height:399px;
+      max-width: 500px;
+      
+    }
+  
+  
+    .my-image {
+     
+      justify-content: center;
+    }
+    
+  
+    .box1 {
+      width: 400px; 
+      justify-content: center;
+      border: 1px solid #000;
+      text-align: center;
+  }
+  
+  
+  .r1 {
+      width: 1100px; 
+      height:50px; 
+      display: inline-block;
+      background-color: $f-color;
+      margin-top:-10px;
+  }
+  
+  .r2 {
+      width: 1100px; 
+      height:50px; 
+      display: inline-block;
+      background-color: $s-color;
+      margin-top:-10px;
+  }
+  
+  .r3 {
+      width: 1100px;
+      height:50px; 
+      display: inline-block;
+      background-color: $t-color;
+      margin-top:-10px;
+  }
+  
+  .r4 {
+      width: 1100px;
+      height:50px; 
+      display: inline-block;
+      background-color: $fo-color;
+      margin-top:-10px;
+  }
+    }
+
+    
+
+  @mixin phone{
+    .my-image{
+      background-image: url(200.png);
+    }
+
+
+    .containerr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      
+    }
+  
+    
+  
+    .d1{
+      background-color: #66ccff;
+      height:399px;
+      max-width: 289px;
+      
+      
+    }
+  
+    .d2{
+      background-color: #66ccff;
+      height:399px;
+      max-width: 289px;
+      
+    }
+  
+  
+    .my-image {
+     
+      justify-content: center;
+    }
+    
+  
+    .box1 {
+      width: 400px; 
+      justify-content: center;
+      border: 1px solid #000;
+      text-align: center;
+  }
+  
+  
+  .r1 {
+      width: 900px; 
+      height:50px; 
+      display: inline-block;
+      background-color: $f-color;
+      margin-top:-10px;
+  }
+  
+  .r2 {
+      width: 900px; 
+      height:50px; 
+      display: inline-block;
+      background-color: $s-color;
+      margin-top:-10px;
+  }
+  
+  .r3 {
+      width: 900px;
+      height:50px; 
+      display: inline-block;
+      background-color: $t-color;
+      margin-top:-10px;
+  }
+  
+  .r4 {
+      width: 900px;
+      height:50px; 
+      display: inline-block;
+      background-color: $fo-color;
+      margin-top:-10px;
+  }
+    }
+
+    
+  @mixin phone{
+    
+    .containerr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      
+    }
+  
+    
+  
+    .d1{
+      background-color: #66ccff;
+      height:399px;
+      max-width: 155px;
+      
+      
+    }
+  
+    .d2{
+      background-color: #66ccff;
+      height:399px;
+      max-width: 155px;
+      
+    }
+  
+  
+    .my-image {
+     
+      justify-content: center;
+    }
+    
+  
+    .box1 {
+      width: 400px; 
+      justify-content: center;
+      border: 1px solid #000;
+      text-align: center;
+  }
+  
+  
+  .r1 {
+      width: 600px; 
+      height:50px; 
+      display: inline-block;
+      background-color: $f-color;
+      margin-top:-10px;
+  }
+  
+  .r2 {
+      width: 600px; 
+      height:50px; 
+      display: inline-block;
+      background-color: $s-color;
+      margin-top:-10px;
+  }
+  
+  .r3 {
+      width: 600px;
+      height:50px; 
+      display: inline-block;
+      background-color: $t-color;
+      margin-top:-10px;
+  }
+  
+  .r4 {
+      width: 600px;
+      height:50px; 
+      display: inline-block;
+      background-color: $fo-color;
+      margin-top:-10px;
+  }
+    }
