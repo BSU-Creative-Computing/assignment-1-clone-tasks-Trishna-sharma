@@ -1,0 +1,154 @@
+// Define CSS styles for the whole div
+@import 'variables';
+@import 'mixins';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+   
+
+  .containerr{
+    @include media-query($break-l) {
+      max-width: 940px;
+    }
+  
+    @include media-query($break-l2) {
+      max-width: 1040px;
+    }
+
+    @include media-query($break-l3) {
+      min-width: 870px;
+    }
+
+    @include media-query($break-l4) {
+      min-width: 870px;
+    }
+  }
+  }
+   
+
+.d1{
+  width: 800px;
+  margin: 0 auto;
+  background-color: #89CFF0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+  
+.d2{
+  width: 800px;
+  margin: 0 auto;
+  background-color: #89CFF0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+  
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+  
+
+  .box1 {
+    width: 400px; /* Set the desired width for the container */
+    justify-content: center;/* Center the container horizontally */
+    border: 1px solid #000;
+    text-align: center;
+}
+
+/* Define CSS styles for the vertical divs */
+.r1 {
+    width: 800px; /* Each vertical div takes 50% of the container width */
+    height:50px; /* Set the desired height for the vertical divs */
+    display: inline-block;
+    background-color: #e0e0e0;
+    margin-top:-10px;
+}
+
+.r2 {
+    width: 800px; /* Each vertical div takes 50% of the container width */
+    height:50px; /* Set the desired height for the vertical divs */
+    display: inline-block;
+    background-color: #e91818;
+    margin-top:-10px;
+}
+
+.r3 {
+    width: 800px; /* Each vertical div takes 50% of the container width */
+    height:50px; /* Set the desired height for the vertical divs */
+    display: inline-block;
+    background-color: #2e1f1f;
+    margin-top:-10px;
+}
+
+.r4 {
+    width: 800px; /* Each vertical div takes 50% of the container width */
+    height:50px; /* Set the desired height for the vertical divs */
+    display: inline-block;
+    background-color: #d6b6b6;
+    margin-top:-10px;
+}
+.circle {
+    width: 50px; /* Set the initial width of the smallest circle */
+    height: 50px; /* Set the initial height of the smallest circle */
+    background-color: #4e89ae;
+    border-radius:70px ; /* Makes the element a circle */
+    margin: 10px auto; /* Centers the circles horizontally */
+}
+
+/* Increase the size of the circles */
+.circle:nth-child(2) {
+  width: 80px; /* Set the initial width of the smallest circle */
+    height: 80px;
+    border-radius: 80px;
+    background-color: #43658b;
+}
+
+.circle:nth-child(3) {
+  width: 90px; /* Set the initial width of the smallest circle */
+    height: 90px;
+    border-radius: 90px;
+    background-color: #ed6663;
+}
+
+.circle:nth-child(4) {
+  width: 100px; /* Set the initial width of the smallest circle */
+    height: 100px;
+   border-radius: 100px;
+    background-color: #ffa372;
+}
+
+footer {
+    background-color: #8ccff7;
+    color: #fff; /* Text color for the footer content */
+    text-align: center;
+    height:50px; /* Padding for top and bottom */
+
+}
+
+@include media-query($break-md) {
+  .d1,
+  .d2 {
+    flex: 0 0 50%;
+  }
+
+  .image {
+    flex: 0 0 100%;
+  }
+}
+
+.my-container {
+  @include center-content;
+  // other styles for your container
+}

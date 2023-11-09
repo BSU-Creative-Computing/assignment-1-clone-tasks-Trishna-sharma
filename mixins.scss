@@ -1,0 +1,11 @@
+@mixin media-query($break) {
+    @media (min-width: $break) {
+      @content;
+    }
+  }
+
+  @mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
