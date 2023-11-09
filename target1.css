@@ -1,10 +1,10 @@
-/* Reset default margin and padding */
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Basic styling for the header */
+
 header {
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@ header {
 
 
 
-/* Styling for the main content */
+
 .image-section {
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +41,7 @@ header {
     line-height: 1.4;
 }
 
-/* Styling for the footer */
+
 footer {
     text-align: center;
     background-color: #333;
@@ -49,7 +49,7 @@ footer {
     padding: 10px 0;
 }
 
-/* Media query for responsiveness (adjust as needed) */
+
 @media (max-width: 768px) {
     .logo img {
         max-width: 80px;
@@ -69,24 +69,24 @@ footer {
     
 }
 
-/* Media queries for specific screen sizes */
+
 @media screen and (max-width: 768px) {
-    /* Styles for screens up to 768px wide (e.g., mobile devices) */
+    
     header {
       padding: 10px;
     }
 
 
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-        /* Styles for screens between 769px and 1024px wide (e.g., tablets) */
+        
         nav ul {
           flex-direction: row;
         }
       }
       
-      /* Additional media queries for larger screens if needed */
+
       @media screen and (min-width: 1025px) {
-        /* Styles for screens wider than 1024px (e.g., desktops) */
+    
         nav li {
           margin-right: 20px;
         }
